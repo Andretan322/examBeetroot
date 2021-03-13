@@ -1,0 +1,35 @@
+{
+  "name": "exambeetroot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --no-source-map scss/style.scss:css/style.css --watch",
+    "compile": "sass --no-source-map scss/style.scss:css/style.css",
+    "prefix": "postcss --use autoprefixer -o css/style.css css/style.css",
+    "minify": "cleancss --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
+    "build": "npm run compile && npm run prefix && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andretan322/examBeetroot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 4 version"
+  ],
+  "bugs": {
+    "url": "https://github.com/Andretan322/examBeetroot/issues"
+  },
+  "homepage": "https://github.com/Andretan322/examBeetroot#readme",
+  "dependencies": {
+    "node-modules": "^1.0.1",
+    "autoprefixer": "^10.2.5",
+    "clean-css-cli": "^5.2.1",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
+  }
+}
