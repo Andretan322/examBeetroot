@@ -203,6 +203,7 @@ textarea {
 }
 .how-it-works__row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .how-it-works__step {
@@ -217,4 +218,57 @@ textarea {
 }
 .how-it-works__step svg {
   margin: 0 0 15px 0;
+}
+
+.places-one {
+  background: url("../img/places/places-one.png") no-repeat;
+  background-size: cover;
+  padding: 220px 0 100px;
+}
+
+.places-two {
+  background: url("../img/places/places-two.png") no-repeat;
+  background-size: cover;
+  padding: 220px 0 100px;
+}
+
+.places__row {
+  display: flex;
+}
+
+.places__text {
+  flex: 1 1 50%;
+  background: rgba(35, 35, 35, 0.9);
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.places__empty {
+  flex: 1 1 50%;
+}
+.places__country {
+  color: #e8e8e8;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.places__hotel {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.places__desc {
+  font-size: 16px;
+  letter-spacing: normal;
+  margin: 0 0 20px 0;
+}
+.places__desc p:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.places__btn a {
+  letter-spacing: 1.2px;
+  font-size: 16px;
 }
