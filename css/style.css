@@ -42,6 +42,10 @@ textarea {
   font-family: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 .page {
   padding: 10px;
   display: flex;
@@ -99,10 +103,15 @@ textarea {
   background-size: cover;
   color: #ffffff;
   text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero .container {
+  flex: 1 1 750px;
 }
 .hero__column {
   max-width: 750px;
-  height: 100%;
   margin: 0 auto;
 }
 .hero__title {
@@ -206,6 +215,7 @@ textarea {
 .how-it-works {
   background: #333333;
   padding: 80px 0 100px;
+  text-align: center;
 }
 .how-it-works__row {
   display: flex;
@@ -366,4 +376,129 @@ textarea {
 .footer__subtitle {
   color: #ffffff;
   margin: 0 0 30px 0;
+}
+
+@media (max-width: 992px) {
+  .choose-us {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .choose-us__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .choose-us__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+  }
+  .choose-us__images {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .choose-us__images img {
+    width: 100%;
+    height: auto;
+  }
+  .choose-us__img:nth-of-type(1) {
+    padding: 0;
+  }
+
+  .how-it-works {
+    padding: 60px 0;
+  }
+
+  .places-one, .places-two {
+    padding: 60px 0;
+  }
+
+  .feedback {
+    padding: 60px 0;
+  }
+  .feedback__title {
+    margin: 0 0 45px 0;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 600px;
+  }
+
+  .choose-us {
+    padding: 30px 0;
+  }
+  .choose-us__images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-it-works {
+    padding: 30px 0;
+  }
+
+  .places-one, .places-two {
+    padding: 30px 0;
+  }
+
+  .places__row {
+    justify-content: center;
+  }
+  .places__text {
+    flex: 1 1 100%;
+  }
+  .places__empty {
+    display: none;
+  }
+
+  .feedback {
+    padding: 30px 0;
+  }
+  .feedback__title {
+    margin: 0 0 45px 0;
+  }
+  .feedback__row {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    height: 500px;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__search-form {
+    flex-direction: column;
+    gap: 10px;
+    height: 120px;
+  }
+  .hero__search-form input {
+    flex: 1 1 60px;
+    font-size: 12px;
+  }
+  .hero__search-form button {
+    flex: 1 1 60px;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .choose-us__title {
+    margin: 0 0 30px 0;
+  }
+  .choose-us__desc {
+    margin: 0 0 30px 0;
+  }
 }

@@ -43,6 +43,10 @@ textarea {
   font-family: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 .page {
   padding: 10px;
   display: flex;
@@ -104,3 +108,154 @@ textarea {
 @import "_places";
 @import "_feedback";
 @import "_footer";
+@import "_nav";
+
+@media (max-width: 992px) {
+  .choose-us {
+    padding: 60px 0;
+    text-align: center;
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 800px;
+    }
+
+    &__images {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__img:nth-of-type(1) {
+      padding: 0;
+    }
+  }
+
+  .how-it-works {
+    padding: 60px 0;
+  }
+
+  .places-one, .places-two {
+    padding: 60px 0;
+  }
+
+  .feedback {
+    padding: 60px 0;
+
+    &__title {
+      margin: 0 0 45px 0;
+    }
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 600px;
+  }
+
+  .choose-us {
+    padding: 30px 0;
+
+    &__images {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .how-it-works {
+    padding: 30px 0;
+  }
+
+  .places-one, .places-two {
+    padding: 30px 0;
+  }
+
+  .places {
+    &__row {
+      justify-content: center;
+    }
+
+    &__text {
+      flex: 1 1 100%;
+    }
+
+    &__empty {
+      display: none;
+    }
+  }
+
+  .feedback {
+    padding: 30px 0;
+
+    &__title {
+    margin: 0 0 45px 0;
+    }
+
+    &__row {
+      flex-direction: column;
+    }
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 500px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__search-form {
+      flex-direction: column;
+      gap: 10px;
+      height: 120px;
+
+      & input {
+        flex: 1 1 60px;
+        font-size: 12px;
+      }
+
+      & button {
+        flex: 1 1 60px;
+        width: 150px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .choose-us {
+    &__title {
+      margin: 0 0 30px 0;
+    }
+
+    &__desc {
+      margin: 0 0 30px 0;
+    }
+  }
+
+
+}

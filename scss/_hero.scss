@@ -4,10 +4,16 @@
     background-size: cover;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & .container {
+        flex: 1 1 750px;
+    }
 
     &__column {
         max-width: 750px;
-        height: 100%;
         margin: 0 auto;
     }
 
