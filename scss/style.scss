@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 @font-face {
-  font-family: "Aleo";
+  font-family: 'Aleo';
   src: url("../fonts/Aleo-Font/Aleo-Bold.otf") format("otf");
   src: url("../fonts/Aleo-Font/Aleo-Regular.otf") format("otf");
 }
@@ -41,4 +41,31 @@ input,
 button,
 textarea {
   font-family: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 225px;
+  height: 60px;
+  background-color: #5474fd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.title, .btn a {
+  font-family: 'Aleo';
+  font-weight: 400;
 }
