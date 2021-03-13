@@ -62,17 +62,34 @@ textarea {
   justify-content: center;
   align-items: center;
 
+  &:hover {
+    box-shadow: 0px 0px 10px black;
+  }
+
   & a {
     width: 100%;
     height: 100%;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .title, .btn a {
   font-family: 'Aleo';
   font-weight: 400;
+}
+
+.desc {
+  color: #e8e8e8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.6px;
 }
 
 @import "_hero";
