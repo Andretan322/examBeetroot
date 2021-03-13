@@ -323,3 +323,47 @@ textarea {
 .feedback__feedback P:not(:last-child) {
   margin: 0 0 20px 0;
 }
+
+.footer {
+  background: #232323;
+  padding: 120px 0 50px;
+  text-align: center;
+}
+.footer__column {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__logo i {
+  color: #ffffff;
+}
+.footer__logo .fa-facebook-f:hover {
+  color: #1877F2;
+}
+.footer__logo .fa-twitter:hover {
+  color: #1DA1F3;
+}
+.footer__logo .fa-linkedin-in:hover {
+  color: #0073B2;
+}
+.footer__logo .fa-youtube:hover {
+  color: #FF0101;
+}
+.footer__logo .fa-pinterest:hover {
+  color: #DF0022;
+}
+.footer__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.36px;
+  margin: 0 0 10px 0;
+}
+.footer__subtitle {
+  color: #ffffff;
+  margin: 0 0 30px 0;
+}
